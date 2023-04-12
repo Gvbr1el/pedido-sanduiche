@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+function pedido(){
+    var pedido = prompt("Qual o seu pedido?");
+    var preco;
+    var precoAcompanhamento;
+
+    
+    for (var i = 0; acompanhamento !== "concluido"; i++){
+        var acompanhamento = prompt("Qual acompanhamento?");  
+        var numAcompanhamento = acompanhamento + " " + numAcompanhamento;
+    }
+    
+    if(pedido === "X-tudo"){
+        preco = 26.00;
+    }
+    else if(pedido === "X-bacon"){
+        preco = 22.00;
+    }
+    else if(pedido === "X-egg"){
+        preco = 20.00;
+    }
+
+    if(i <= 5){
+        precoAcompanhamento = (i - 1) * 2;
+    }
+    else{
+        precoAcompanhamento = (5 * 2) + ((i - 6) * 5);
+    }
+
+    
+    var total = preco + precoAcompanhamento;
+
+    console.log("O seu pedido foi: " + pedido);
+    console.log("Com os seguintes: " + numAcompanhamento);
+    console.log("Preço do lanche: " + preco);
+    console.log("Preço acompanhamentos: " + precoAcompanhamento);
+    console.log("E o total deu: " + total);
+}   
+
+pedido();
+
+    </script>
+</body>
+</html>
